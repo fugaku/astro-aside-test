@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
 import react from '@astrojs/react';
 import { astroCallouts } from './integrations/Asides';
-import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +11,6 @@ export default defineConfig({
     // Enable React for the Algolia search component.
     react(),
     astroCallouts(),
-    mdx(),
   ],
   site: `http://astro.build`,
 });
